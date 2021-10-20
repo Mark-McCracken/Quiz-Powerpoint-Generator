@@ -133,7 +133,7 @@ def create_music_round():
             print(f"Error encountered trying to find right files in folder {folder}")
             exit(1)
 
-    songs = [create_song_obj_from_folder(f) for f in listdir(path.join("questions", "songs"))]
+    songs = [create_song_obj_from_folder(f) for f in listdir(path.join("questions", "songs")) if not re.match(".DS_Store", f)]
     assert len(songs) == 10, "Need to have 10 folders for audio files in the questions/songs folder"
     for idx, song in enumerate(songs):
         music_question_slide = prs.slides.add_slide(slide_layouts.get_by_name("MUSIC_ROUND_QUESTION"))
