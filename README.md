@@ -18,12 +18,14 @@ I then get my mp3/m4a file, open it in quicktime editor, trim it down to the rig
 I slice the answer track so the most obvious part of the song plays at around seconds, which is when the 2nd image animates in, so the answer becomes evident at the same time as the picture.
 I just google 2 images add them as img_1.jpep (or .png) and img_2.jpeg to the same folder.
 
-Hit run, and it should spit out the output file as the powerpoint!
-
 ## Quiz question tips
 Make sure you have at least a few questions in each worded round that are multiple choice, and a few "list 5 of these" type questions, to give chances for half points.
 Try to make sure the music round isn't all the same genre, and has a good mix of men/women, old/new, pop, classical, hip-hop, rock, dance, yada ya. Variety is good here.
 And avoid questions that might be potentially offensive.
+
+## Running
+You need to install the python library python-pptx.
+Then run python fill_template.py, and output.pptx should be generated.
 
 ## What do I need to do after that?
 
