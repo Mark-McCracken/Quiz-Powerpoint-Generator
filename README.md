@@ -20,12 +20,24 @@ I just google 2 images add them as img_1.jpep (or .png) and img_2.jpeg to the sa
 
 Hit run, and it should spit out the output file as the powerpoint!
 
+## Quiz question tips
+Make sure you have at least a few questions in each worded round that are multiple choice, and a few "list 5 of these" type questions, to give chances for half points.
+Try to make sure the music round isn't all the same genre, and has a good mix of men/women, old/new, pop, classical, hip-hop, rock, dance, yada ya. Variety is good here.
+And avoid questions that might be potentially offensive.
+
 ## What do I need to do after that?
 
 ### Autosizing text
 The text should autosize, but because of the way the template gets populated, they overflow at first.
 
 To fix, click on the text, make a tiny change and it should auto-resize.
+
+### Check images
+Sometimes the images for picture round aren't very nicely laid out, they automatically scale to fit and crop the edges.
+So long as you pick images that are close to the same dimension ratio, should be mostly fine, but might want to tweak those to be sure it's clear.
+
+### Check any currency answers
+Currency isn't stored in the excel cell value, so if you enter £4, it might be shown on the slide as just 4, so double check those just to be sure.
 
 ### Animating the sound
 The sound in each music round question and answer slide does not start
