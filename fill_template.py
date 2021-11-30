@@ -58,7 +58,7 @@ def create_picture_round():
     picture_round_intro_slide.placeholders[10].text = "PICTURE ROUND"
     picture_round_slide = prs.slides.add_slide(slide_layouts.get_by_name("PICTURE_QUESTIONS"))
 
-    pictures = [pic for pic in listdir(path.join("questions", "pictures")) if re.match(".*\.(jpe?g|png)$", pic)]
+    pictures = [pic for pic in listdir(path.join("questions", "pictures")) if re.match(".*\.(jpe?g|png)$", pic, re.IGNORECASE)]
     assert len(pictures) == 9, "Need to have 9 images in the questions/pictures folder"
     for idx, img_path in enumerate(pictures):
         picture_round_slide.placeholders[idx+10].insert_picture(path.join("questions", "pictures", img_path))
@@ -71,7 +71,7 @@ def create_picture_round():
         picture_answer_slide = prs.slides.add_slide(slide_layouts.get_by_name("PICTURE_ANSWER"))
         picture_answer_slide.placeholders[22].text = f"PICTURE ROUND ANSWERS"
         picture_answer_slide.placeholders[11].text = f"{idx+1}."
-        picture_answer_slide.placeholders[23].text = re.sub("\.jpeg|\.png", "", img_path)
+        picture_answer_slide.placeholders[23].text = re.sub("\.jpe?g$|\.png$", "", img_path, flags=re.IGNORECASE)
         picture_answer_slide.placeholders[10].insert_picture(path.join("questions", "pictures", img_path))
 
 
